@@ -4,13 +4,13 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
 const RESOURCES = {"version.json": "3906fc5d38199c243ab81a45fee32c66",
-"index.html": "1e6f43657972e056bef709846b764925",
-"/": "1e6f43657972e056bef709846b764925",
-"main.dart.js": "f1290dc842d11bfd9ef598a78720e79d",
+"index.html": "43db5f21c842651e6c7c24f7cdce9ad4",
+"/": "43db5f21c842651e6c7c24f7cdce9ad4",
+"main.dart.js": "10f1a1ffc5de2cea9695c0a69fba0e83",
 "flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
 "icons/logo-aerium-1.png": "c9c1749b275f61ebc563d6596ccf2569",
 "icons/logo-aerium-2.png": "58b131c1e81194452cb702693c040a92",
-"manifest.json": "2e28cebc1e27a999e5b0da349afad267",
+"manifest.json": "34fba0ef2739178521bce8d4027791e9",
 "assets/AssetManifest.json": "69526884b334adeb4de34ab8fafaebfc",
 "assets/NOTICES": "acd92c656dc86420a4af01ac7caa0966",
 "assets/FontManifest.json": "a78f950d25c1e29b92a4a309465e60cd",
