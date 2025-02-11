@@ -23,7 +23,7 @@ class StringConst {
   static const String HI = "Hi,";
   static const String DEV_INTRO = "I'm Aashish.";
   static const String DEV_TITLE = "Software Engineer.";
-  static const String DEV_DESC = "Mobile Engineer / Flutter Developer";
+  static const String DEV_DESC = "Mobile Engineer / Backend Developer";
   static const String SEE_MY_WORKS = "See my works";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String CRAFTED_WITH_LOVE = "Crafted with love.";
@@ -46,8 +46,8 @@ class StringConst {
   static const String MESSAGE_ERROR_MSG =
       "* Please enter something to send this form";
   static const String SEND_MESSAGE = "Send Message";
-  static const String COPYRIGHT = "©  2024  Built by  $DEV_NAME,";
-  static const String DESIGNED_BY = "Designed by Julius G.";
+  static const String COPYRIGHT = "©  2025  Built by  $DEV_NAME";
+  static const String DESIGNED_BY = "";
   static const String DESIGN_LINK =
       "https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design";
   static const String MESSAGE_ME = "Message me";
@@ -87,8 +87,8 @@ class StringConst {
       "“I have no special talents. I am only passionately curious.”";
   static const String FAMOUS_QUOTE_AUTHOR = "Albert Einstein";
   static const String WORK_TOGETHER = "Let's work together.";
-  static const String AVAILABLE_FOR_FREELANCE =
-      "I'm Open to Work & Freelancing.";
+  static const String MOTIVATION_TEXT =
+      "Empowering ideas through innovation and technology.";
   static const String SAY_HELLO = "Say Hello";
 
   // Works Page
@@ -111,7 +111,7 @@ class StringConst {
 
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";
-  static const String BUILT_WITH_FLUTTER = "Built using ";
+  static const String BUILT_WITH_FLUTTER = "Crafted using ";
   static const String DEV_EMAIL = "aashishg2003@gmail.com";
   static const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
 
@@ -273,7 +273,19 @@ class StringConst {
   static const String COMPANY_6_ROLE_3 =
       "Collaborating within a dynamic tech stack (Node.js, TypeScript, MongoDB, Redis, etc.) to deliver scalable backend solutions for a rapidly growing AI platform.";
   static const String LOCATION_6 = "Gurgaon - India";
-  static const String DURATION_6 = "Jan 2024 - Present";
+  static const String DURATION_6 = "Jan 2024 - June 2024";
+
+  static const String COMPANY_7 = "Leena AI";
+  static const String COMPANY_7_URL = "https://www.leena.ai/";
+  static const String POSITION_7 = "Software Development Engineer - Backend";
+  static const String COMPANY_7_ROLE_1 =
+      "Enhanced backend systems using Node.js, MongoDB, RabbitMQ, and Redis, improving scalability by 40%.";
+  static const String COMPANY_7_ROLE_2 =
+      "Designed integration pipelines for Fortune 500 clients (Sony, Coca-Cola, PhonePe).";
+  static const String COMPANY_7_ROLE_3 =
+      "Implemented a job queuing system using RabbitMQ, reducing processing time by 25%.";
+  static const String LOCATION_7 = "Gurgaon - India";
+  static const String DURATION_7 = "July 2024 - Present";
 
   //Portfolio, Projects
   static const String PORTFOLIO_SITE_V2 = "Aerium V2";

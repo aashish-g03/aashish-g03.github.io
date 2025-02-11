@@ -30,11 +30,12 @@ class _SlidingBannerState extends State<SlidingBanner>
     super.initState();
   }
 
-@override
+  @override
   void dispose() {
     controller.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
@@ -58,7 +59,7 @@ class _SlidingBannerState extends State<SlidingBanner>
             ),
             child: Text(
               "TITLE",
-              style: textTheme.headline3?.copyWith(
+              style: textTheme.displaySmall?.copyWith(
                 color: AppColors.white,
               ),
             ),

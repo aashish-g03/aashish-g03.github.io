@@ -1,5 +1,5 @@
 import 'package:aerium/infrastructure/failures/email_failure.dart';
-import 'package:emailjs/emailjs.dart';
+import 'package:emailjs/emailjs.dart' as emailjs;
 import 'package:http/http.dart' as http;
 import 'package:aerium/values/values.dart';
 
@@ -36,11 +36,12 @@ class EmailApiImpl implements EmailApi {
         'message':
             "Name: $name \n Email: $email \n Subject: $subject \n Message: $message",
       };
-      await EmailJS.send(
+
+      await emailjs.send(
         serviceId,
         templateId,
         templateParams,
-        const Options(
+        const emailjs.Options(
           publicKey: '15xmVfRvzX3r1PCbD',
           privateKey: 'Nho-AvFVItbIq6pKS2Y8O',
         ),
@@ -80,7 +81,7 @@ class EmailApiImpl implements EmailApi {
       //   throw EmailFailure.serverError();
       // }
     } catch (e) {
-      print("Errorss  ${e.toString()}");
+      print("Error: ${e.toString()}");
       throw EmailFailure.serverError();
     }
   }

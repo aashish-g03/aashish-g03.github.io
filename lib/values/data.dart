@@ -346,6 +346,18 @@ class Data {
 
   static List<ExperienceData> experienceData = [
     ExperienceData(
+      company: StringConst.COMPANY_7,
+      position: StringConst.POSITION_7,
+      companyUrl: StringConst.COMPANY_7_URL,
+      roles: [
+        StringConst.COMPANY_7_ROLE_1,
+        StringConst.COMPANY_7_ROLE_2,
+        StringConst.COMPANY_7_ROLE_3,
+      ],
+      location: StringConst.LOCATION_7,
+      duration: StringConst.DURATION_7,
+    ),
+    ExperienceData(
       company: StringConst.COMPANY_6,
       position: StringConst.POSITION_6,
       companyUrl: StringConst.COMPANY_6_URL,
