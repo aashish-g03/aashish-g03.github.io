@@ -50,11 +50,11 @@ class _AnimatedFooterState extends State<AnimatedFooter>
   Widget build(BuildContext context) {
     double circleImageSize = responsiveSize(context, 100, 150);
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(
+    TextStyle? style = textTheme.bodyLarge?.copyWith(
       color: AppColors.accentColor,
       fontSize: Sizes.TEXT_SIZE_14,
     );
-    TextStyle? titleStyle = textTheme.headline4?.copyWith(
+    TextStyle? titleStyle = textTheme.headlineMedium?.copyWith(
       color: AppColors.accentColor,
       fontSize: responsiveSize(
         context,
@@ -112,7 +112,6 @@ class _AnimatedFooterState extends State<AnimatedFooter>
                   Center(
                     child: AnimatedPositionedText(
                       text: StringConst.WORK_TOGETHER,
-                     
                       textAlign: TextAlign.center,
                       textStyle: titleStyle,
                       controller: CurvedAnimation(
@@ -126,7 +125,7 @@ class _AnimatedFooterState extends State<AnimatedFooter>
             ),
             Spacer(),
             AnimatedPositionedText(
-              text: StringConst.AVAILABLE_FOR_FREELANCE,
+              text: StringConst.MOTIVATION_TEXT,
               textAlign: TextAlign.center,
               textStyle: subtitleStyle,
               factor: 2.0,

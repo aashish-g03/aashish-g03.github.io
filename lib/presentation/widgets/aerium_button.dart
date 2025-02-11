@@ -90,7 +90,7 @@ class _AeriumButtonState extends State<AeriumButton>
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(
+    TextStyle? style = textTheme.bodyLarge?.copyWith(
       color: _textAndIconColor.value,
       fontSize: Sizes.TEXT_SIZE_14,
       fontWeight: FontWeight.w400,
@@ -154,7 +154,7 @@ class _AeriumButtonState extends State<AeriumButton>
 
   Widget childWithIcon() {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(
+    TextStyle? style = textTheme.bodyLarge?.copyWith(
       color: _textAndIconColor.value,
       fontSize: Sizes.TEXT_SIZE_14,
       fontWeight: FontWeight.w400,

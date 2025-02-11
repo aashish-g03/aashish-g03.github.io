@@ -37,7 +37,7 @@ class ContentBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? defaultNumberStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? defaultNumberStyle = textTheme.bodyLarge?.copyWith(
       fontSize: Sizes.TEXT_SIZE_10,
       color: AppColors.black,
       fontWeight: FontWeight.w400,
@@ -47,7 +47,7 @@ class ContentBuilder extends StatelessWidget {
     TextStyle? defaultSectionStyle = defaultNumberStyle?.copyWith(
       color: AppColors.grey600,
     );
-    TextStyle? defaultTitleStyle = textTheme.subtitle1?.copyWith(
+    TextStyle? defaultTitleStyle = textTheme.titleMedium?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(
         context,
@@ -111,11 +111,11 @@ class ContentBuilder extends StatelessWidget {
                       ),
                       SpaceW16(),
                       Expanded(
-                        child:  AnimatedTextSlideBoxTransition(
-                        controller: controller,
-                        text: section,
-                        textStyle: sectionStyle ?? defaultSectionStyle,
-                      ),
+                        child: AnimatedTextSlideBoxTransition(
+                          controller: controller,
+                          text: section,
+                          textStyle: sectionStyle ?? defaultSectionStyle,
+                        ),
                       ),
                     ],
                   ),
@@ -128,10 +128,10 @@ class ContentBuilder extends StatelessWidget {
                     children: [
                       heading ??
                           AnimatedTextSlideBoxTransition(
-                        controller: controller,
-                        text: title!,
-                        textStyle: titleStyle ?? defaultTitleStyle,
-                      ),
+                            controller: controller,
+                            text: title!,
+                            textStyle: titleStyle ?? defaultTitleStyle,
+                          ),
                       SpaceH20(),
                       body,
                       footer ?? Empty(),

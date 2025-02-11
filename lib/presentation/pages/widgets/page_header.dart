@@ -29,7 +29,7 @@ class _PageHeaderState extends State<PageHeader>
       vsync: this,
       duration: Duration(milliseconds: 1500),
     )..repeat();
-   
+
     animation = Tween<Offset>(
       begin: Offset(0, 0.5),
       end: Offset(0, -0.5),
@@ -59,7 +59,7 @@ class _PageHeaderState extends State<PageHeader>
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? headingStyle = textTheme.headline2?.copyWith(
+    TextStyle? headingStyle = textTheme.displayMedium?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(
         context,

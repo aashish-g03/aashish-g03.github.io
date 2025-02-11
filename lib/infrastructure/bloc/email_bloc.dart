@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:aerium/infrastructure/api/email_repository.dart';
 import 'package:bloc/bloc.dart';
-
 import 'package:freezed_annotation/freezed_annotation.dart';
+
 import 'package:meta/meta.dart';
 
 part 'email_event.dart';
@@ -14,34 +14,23 @@ part 'email_bloc.freezed.dart';
 class EmailBloc extends Bloc<EmailEvent, EmailState> {
   final EmailRepository _emailRepository;
 
-  EmailState get initialState => EmailState.initial();
+  EmailBloc(this._emailRepository) : super(EmailState.initial()) {
+    on<EmailEvent>(_onEmailEvent);
+  }
 
-  EmailBloc(this._emailRepository) : super(EmailState.initial());
+  Future<void> _onEmailEvent(EmailEvent event, Emitter<EmailState> emit) async {
+    emit(EmailState.sendingEmail());
 
-  @override
+    final response = await _emailRepository.sendEmail(
+      name: event.name,
+      email: event.email,
+      subject: event.subject,
+      message: event.message,
+    );
 
-  @override
-  Stream<EmailState> mapEventToState(
-    EmailEvent event,
-  ) async* {
-    if (event is EmailEvent) {
-      yield EmailState.sendingEmail();
-      
-      final response = await _emailRepository.sendEmail(
-        name: event.name,
-        email: event.email,
-        subject: event.subject,
-        message: event.message,
-      );
-
-      yield* response.fold(
-        (failure) async* {
-          yield EmailState.failure();
-        },
-        (data) async* {
-          yield EmailState.emailSentSuccessFully();
-        },
-      );
-    }
+    response.fold(
+      (failure) => emit(EmailState.failure()),
+      (data) => emit(EmailState.emailSentSuccessFully()),
+    );
   }
 }
