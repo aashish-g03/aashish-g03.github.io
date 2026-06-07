@@ -46,7 +46,7 @@ class StringConst {
   static const String MESSAGE_ERROR_MSG =
       "* Please enter something to send this form";
   static const String SEND_MESSAGE = "Send Message";
-  static const String COPYRIGHT = "©  2025  Built by  $DEV_NAME";
+  static const String COPYRIGHT = "©  2026  Built by  $DEV_NAME";
   static const String DESIGNED_BY = "";
   static const String DESIGN_LINK =
       "https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design";
