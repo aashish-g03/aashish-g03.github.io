@@ -272,7 +272,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                           Wrap(
                             spacing: 20,
                             runSpacing: 20,
-                            children: _buildSocials(Data.socialData2),
+                            children: _buildSocials(Data.socialData),
                           ),
                         ],
                       ),

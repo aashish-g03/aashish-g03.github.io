@@ -416,7 +416,7 @@ class _AboutDevState extends State<AboutDev> {
             runSpacing: 20,
             children: _buildSocials(
               context: context,
-              data: Data.socialData1,
+              data: Data.socialData,
             ),
           ),
         )

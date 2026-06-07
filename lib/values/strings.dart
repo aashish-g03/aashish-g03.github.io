@@ -210,81 +210,73 @@ class StringConst {
   static const String DATA_SCIENCE = "Data Science";
   static const String ANDROID_BASICS = "Android Basics";
 
-  //Experience
-  static const String CURRENT_MONTH_YEAR = "May 2020 - Current";
-  static const String STARTED_MONTH_YEAR = "May 2017";
+  // Experience (numbered for easy add/remove, List<String> for flexible roles)
+  static const String COMPANY_1 = "Leena AI";
+  static const String COMPANY_1_URL = "https://www.leena.ai/";
+  static const String POSITION_1 = "Software Development Engineer I";
+  static const String LOCATION_1 = "Gurgaon - India";
+  static const String DURATION_1 = "July 2024 - Present";
+  static const List<String> COMPANY_1_ROLES = [
+    "Built Leena's autonomous agent server on FastAPI with streaming response delivery. Integrated with Microsoft 365 Copilot and SAP Joule using MCP and A2A protocols with OAuth 2.0 access control for enterprise clients.",
+    "Designed an internal debugging agent for Leena's AI products. MCP-based tool exposure with RBAC and PII filtering so developers and PMs can diagnose issues without accessing raw customer data.",
+    "Shipped an LLM evaluation framework with LLM-as-judge scoring and flake detection for regression testing. Every prompt change passes through this before it hits production.",
+    "Led development of an AI-powered matching system for a Big 4 client using ElasticSearch with HNSW vector search. 85% accuracy, cut manual screening time in half. Awarded 'We Are Customer Obsessed' Q3 2024.",
+    "Built voice AI agent pipelines: STT/TTS integration, conversation orchestration, and latency-optimized streaming for real-time interactions.",
+    "Delivered a drag-and-drop no-code form builder with smart defaults and validation rules, cutting setup errors by 60% and reducing engineering time on form-related tickets by ~70%.",
+    "Added RabbitMQ job queues and Redis caching to offload heavy tasks, reducing memory usage by ~25%. Migrated modular workloads to AWS Lambda, lowering infrastructure costs by ~15%.",
+  ];
 
-  static const String COMPANY_2 = "Astechtic Pvt Ltd";
-  static const String COMPANY_2_URL = "https://shrinqghana.com/";
-  static const String POSITION_2 = "Flutter App Development Intern";
-  static const String COMPANY_2_ROLE_1 =
-      "Researched Bloc architecture pattern and state management library, enhancing app scalability and testability by 15%.";
-  static const String COMPANY_2_ROLE_2 =
-      "Worked on a team of 2 to build an AudioBook Store application using Flutter SDK.";
-  static const String COMPANY_2_ROLE_3 =
-      "Integrated the Flutter app with a Web Scraper API for real-time updates from their website, eliminating the need for backend integrations.";
-  static const String LOCATION_2 = "Remote - India";
-  static const String DURATION_2 = "Jan 2022 - Mar 2022";
+  static const String COMPANY_2 = "Leena AI";
+  static const String COMPANY_2_URL = "https://www.leena.ai/";
+  static const String POSITION_2 = "Software Development Intern";
+  static const String LOCATION_2 = "Gurgaon - India";
+  static const String DURATION_2 = "Jan 2024 - June 2024";
+  static const List<String> COMPANY_2_ROLES = [
+    "Engineered backend services (Node.js, MongoDB, RabbitMQ) for the Flexi Benefits platform, handling enrollment, claims, and policy workflows. Reduced manual ops by 40%.",
+    "Built secure REST APIs for enterprise clients (Sony, Coca-Cola, HDFC) using Node.js and TypeScript, ensuring reliable third-party data synchronization.",
+    "Offloaded scheduled jobs to RabbitMQ workers with Redis caching, cutting service memory by ~25%. Migrated modular jobs to AWS Lambda, reducing infra cost by ~15%.",
+    "Instrumented services with Prometheus and Grafana dashboards for API latency, error rates, and throughput monitoring.",
+  ];
 
-  static const String COMPANY_3 = "Walnut";
-  static const String COMPANY_3_URL = "https://bewsys.com/";
-  static const String POSITION_3 = "iOS Flutter Development Intern";
-  static const String COMPANY_3_ROLE_1 =
-      "Contributed to designing & developing an iOS application using Flutter SDK.";
-  static const String COMPANY_3_ROLE_2 =
-      "Successfully gathered requirements from 6 different teams and devised a Custom Sharing solution using Flutter & Firebase, well-received by stakeholders.";
-  static const String COMPANY_3_ROLE_3 =
-      "Collaborated with UX designers to implement features like Health Stories, Feature Discovery, and One Tap SignUp, boosting customer engagement by 35%.";
+  static const String COMPANY_3 = "Digisigns";
+  static const String COMPANY_3_URL = "https://digisigns.in/";
+  static const String POSITION_3 = "Co-Founder & Head of Engineering";
   static const String LOCATION_3 = "Delhi - India";
-  static const String DURATION_3 = "Mar 2022 - Dec 2022";
+  static const String DURATION_3 = "Jan 2023 - Dec 2023";
+  static const List<String> COMPANY_3_ROLES = [
+    "Co-founded a cross-platform digital signage platform targeting Android TV, Tizen, and custom hardware. Built the backend layer: FastAPI + WebSocket services for media streaming, sync, and offline playback with fault-tolerant retries and local caching for low-connectivity environments.",
+    "Tuned buffering, caching, and rendering logic for low-spec devices, improving playback smoothness by ~25% and reducing visual glitches across deployments.",
+  ];
 
-  static const String COMPANY_4 = "Prodo Technologies Pvt Ltd";
-  static const String COMPANY_4_URL = "https://www.brij.money/";
-  static const String POSITION_4 = "Flutter Developer Intern";
-  static const String COMPANY_4_ROLE_1 =
-      "Led development of two Flutter applications published on the App Store and Play Store, amassing 1000+ and 500+ downloads respectively within a month.";
-  static const String COMPANY_4_ROLE_2 =
-      "Gathered feedback through Mixpanel Analytics, enhancing app processes and features, leading to a 30% increase in App Traffic within two months.";
-  static const String COMPANY_4_ROLE_3 =
-      "Optimized UI/UX of existing apps using widget libraries, and devised robust algorithms and data validation techniques for improved functionality and speed.";
+  static const String COMPANY_4 = "Perpetuum Innovations (Spilll)";
+  static const String COMPANY_4_URL = "https://spilll.app/";
+  static const String POSITION_4 = "Software Engineering Intern";
   static const String LOCATION_4 = "Gurgaon - India";
-  static const String DURATION_4 = "Jan 2023 - July 2023";
+  static const String DURATION_4 = "Aug 2023 - Jan 2024";
+  static const List<String> COMPANY_4_ROLES = [
+    "Developed a feature-rich Flutter application for Android and iOS platforms, serving 5,000+ users.",
+    "Collaborated under the mentorship of the former CTO of Wynk Music, creating an innovative audio-based social media platform.",
+  ];
 
-  static const String COMPANY_5 = "Perpetuum Innovations Pvt Ltd";
-  static const String COMPANY_5_URL = SITE_URL;
-  static const String POSITION_5 = "Software Engineering Intern";
-  static const String COMPANY_5_ROLE_1 =
-      "Developed a feature-rich Flutter application for Android and iOS platforms, serving a substantial user base of 5,000 users.";
-  static const String COMPANY_5_ROLE_2 =
-      "Collaborated closely under the mentorship of the former CTO of Wynk Music, creating an innovative social media platform, utilising industry insights.";
-  static const String COMPANY_5_ROLE_3 =
-      "Acquired hands-on experience in the end-to-end development process of the platform, including design, implementation, and user experience optimisation.";
+  static const String COMPANY_5 = "Prodo Technologies";
+  static const String COMPANY_5_URL = "https://prodo.in/";
+  static const String POSITION_5 = "Flutter Developer Intern";
   static const String LOCATION_5 = "Gurgaon - India";
-  static const String DURATION_5 = "Aug 2023 - Jan 2024";
+  static const String DURATION_5 = "Jan 2023 - July 2023";
+  static const List<String> COMPANY_5_ROLES = [
+    "Led development of two Flutter applications published on App Store and Play Store, amassing 1500+ downloads within a month.",
+    "Gathered feedback through Mixpanel Analytics, leading to a 30% increase in app traffic.",
+  ];
 
-  static const String COMPANY_6 = "Leena AI";
-  static const String COMPANY_6_URL = "https://www.leena.ai/";
-  static const String POSITION_6 = "Software Development Intern";
-  static const String COMPANY_6_ROLE_1 =
-      "Engineered backend services (Node.js, MongoDB, RabbitMQ) for the Flexi Benefits platform, handling enrollment, claims, and policy workflows. Reduced manual ops by 40%.";
-  static const String COMPANY_6_ROLE_2 =
-      "Built secure REST APIs for enterprise clients (Sony, Coca-Cola, HDFC) using Node.js and TypeScript, ensuring reliable third-party data synchronization.";
-  static const String COMPANY_6_ROLE_3 =
-      "Offloaded scheduled jobs to RabbitMQ workers with Redis caching, cutting service memory by ~25%. Migrated modular jobs to AWS Lambda, reducing infra cost by ~15%.";
-  static const String LOCATION_6 = "Gurgaon - India";
-  static const String DURATION_6 = "Jan 2024 - June 2024";
-
-  static const String COMPANY_7 = "Leena AI";
-  static const String COMPANY_7_URL = "https://www.leena.ai/";
-  static const String POSITION_7 = "Software Development Engineer I";
-  static const String COMPANY_7_ROLE_1 =
-      "Built autonomous agent server using FastAPI with streaming response delivery, integrated with Microsoft 365 Copilot and SAP Joule via MCP and A2A protocols.";
-  static const String COMPANY_7_ROLE_2 =
-      "Designed internal debugging agent with MCP-based tool exposure, RBAC and PII filtering. Built LLM evaluation framework with LLM-as-judge scoring and flake detection.";
-  static const String COMPANY_7_ROLE_3 =
-      "Led AI-powered matching system for a Big 4 client using ElasticSearch HNSW vector search, achieving 85% accuracy and cutting manual screening by 50%.";
-  static const String LOCATION_7 = "Gurgaon - India";
-  static const String DURATION_7 = "July 2024 - Present";
+  static const String COMPANY_6 = "Walnut";
+  static const String COMPANY_6_URL = "https://walnuthealth.club/";
+  static const String POSITION_6 = "iOS Flutter Development Intern";
+  static const String LOCATION_6 = "Delhi - India";
+  static const String DURATION_6 = "Mar 2022 - Dec 2022";
+  static const List<String> COMPANY_6_ROLES = [
+    "Designed and developed a healthcare community iOS app using Flutter SDK.",
+    "Collaborated with UX designers to implement features like Health Stories and One Tap SignUp, boosting engagement by 35%.",
+  ];
 
   //Portfolio, Projects
   static const String PORTFOLIO_SITE_V2 = "Aerium V2";

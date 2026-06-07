@@ -23,13 +23,6 @@ class ExperiencePage extends StatefulWidget {
 class _ExperiencePageState extends State<ExperiencePage>
     with TickerProviderStateMixin {
   late AnimationController _controller;
-  late AnimationController _experience1Controller;
-  late AnimationController _experience2Controller;
-  late AnimationController _experience3Controller;
-  late AnimationController _experience4Controller;
-  late AnimationController _experience5Controller;
-  late AnimationController _experience6Controller;
-  late AnimationController _experience7Controller;
   late List<AnimationController> _experienceControllers;
 
   @override
@@ -38,56 +31,22 @@ class _ExperiencePageState extends State<ExperiencePage>
       duration: const Duration(milliseconds: 1200),
       vsync: this,
     );
-    _experience1Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
+    _experienceControllers = List.generate(
+      Data.experienceData.length,
+      (_) => AnimationController(
+        duration: const Duration(milliseconds: 1200),
+        vsync: this,
+      ),
     );
-    _experience2Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience3Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience4Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience5Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience6Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience7Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experienceControllers = [
-      _experience1Controller,
-      _experience2Controller,
-      _experience3Controller,
-      _experience4Controller,
-      _experience5Controller,
-      _experience6Controller,
-      _experience7Controller,
-    ];
     super.initState();
   }
 
   @override
   void dispose() {
     _controller.dispose();
-    _experience1Controller.dispose();
-    _experience2Controller.dispose();
-    _experience3Controller.dispose();
-    _experience4Controller.dispose();
-    _experience5Controller.dispose();
-    _experience6Controller.dispose();
-    _experience7Controller.dispose();
+    for (final c in _experienceControllers) {
+      c.dispose();
+    }
     super.dispose();
   }
 
