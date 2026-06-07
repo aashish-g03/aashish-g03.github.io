@@ -34,7 +34,16 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-TEC5KTT70E");
+      gtag("config", "G-TEC5KTT70E", { send_page_view: false });
+      // Send initial page view
+      gtag("event", "page_view", { page_path: window.location.pathname + window.location.hash });
+      // Track Flutter hash route changes
+      window.addEventListener("hashchange", function () {
+        gtag("event", "page_view", {
+          page_path: window.location.hash.replace("#", "") || "/",
+          page_title: document.title
+        });
+      });
     </script>
     <!-- iOS meta tags & icons -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
