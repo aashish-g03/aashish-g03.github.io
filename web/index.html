@@ -90,45 +90,96 @@
         }
 
         #loading img {
-          width: 80px;
-          height: 80px;
-          animation: 1s ease-in-out 0s infinite alternate breathe;
-          opacity: 0.66;
-          transition: opacity 0.4s;
-          margin-bottom: 32px;
+          width: 72px;
+          height: 72px;
+          animation: 1.2s ease-in-out 0s infinite alternate breathe;
+          opacity: 0;
+          animation-delay: 0s;
+          animation-fill-mode: forwards;
+          margin-bottom: 28px;
         }
 
         #loading h1 {
-          font-size: 28px;
+          font-size: 26px;
           font-weight: 600;
-          margin: 0 0 8px 0;
+          margin: 0 0 10px 0;
           letter-spacing: -0.5px;
+          opacity: 0;
+          animation: 0.6s ease-out 0.2s 1 forwards slidein;
         }
 
-        #loading p {
-          font-size: 16px;
+        #loading .subtitle {
+          font-size: 15px;
           color: #555;
           margin: 0 0 6px 0;
-          max-width: 500px;
+          max-width: 480px;
           line-height: 1.5;
+          opacity: 0;
+          animation: 0.6s ease-out 0.4s 1 forwards slidein;
+        }
+
+        #loading .secondary {
+          font-size: 14px;
+          color: #777;
+          margin: 0;
+          max-width: 480px;
+          line-height: 1.5;
+          opacity: 0;
+          animation: 0.6s ease-out 0.6s 1 forwards slidein;
         }
 
         #loading .tech {
-          font-size: 13px;
-          color: #888;
-          margin-top: 16px;
-          letter-spacing: 0.5px;
+          font-size: 12px;
+          color: #999;
+          margin-top: 20px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          opacity: 0;
+          animation: 0.6s ease-out 0.8s 1 forwards slidein;
         }
 
-        #loading.main_done img { opacity: 1; }
+        #loading .progress-bar {
+          width: 120px;
+          height: 2px;
+          background: #eee;
+          border-radius: 2px;
+          margin-top: 28px;
+          overflow: hidden;
+          opacity: 0;
+          animation: 0.4s ease-out 1s 1 forwards slidein;
+        }
+
+        #loading .progress-fill {
+          width: 0%;
+          height: 100%;
+          background: #1a1a2e;
+          border-radius: 2px;
+          animation: 3s ease-in-out 1s 1 forwards progress;
+        }
+
+        #loading.main_done .progress-fill {
+          animation-duration: 0.3s;
+          width: 100%;
+        }
 
         #loading.init_done {
-          animation: 0.33s ease-in-out 0s 1 forwards fadeout;
+          animation: 0.4s ease-in-out 0s 1 forwards fadeout;
         }
 
         @keyframes breathe {
-          from { transform: scale(1); }
-          to { transform: scale(0.95); }
+          from { transform: scale(1); opacity: 0.5; }
+          to { transform: scale(0.92); opacity: 0.8; }
+        }
+
+        @keyframes slidein {
+          from { opacity: 0; transform: translateY(12px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes progress {
+          0% { width: 0%; }
+          50% { width: 60%; }
+          100% { width: 85%; }
         }
 
         @keyframes fadeout {
@@ -138,9 +189,10 @@
       </style>
       <img src="icons/Icon-512.png" alt="Aashish Gupta" />
       <h1>Aashish Gupta</h1>
-      <p>Software Engineer at Leena AI building AI agent infrastructure for Fortune 500 enterprises.</p>
-      <p>Previously co-founded Digisigns. Open source contributor to Apache Iceberg.</p>
+      <p class="subtitle">Software Engineer at Leena AI building AI agent infrastructure for Fortune 500 enterprises.</p>
+      <p class="secondary">Previously co-founded Digisigns. Open source contributor to Apache Iceberg.</p>
       <p class="tech">Python · FastAPI · TypeScript · Node.js · ElasticSearch · AWS</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
     </div>
     <script>
       window.addEventListener("load", function () {
