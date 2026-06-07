@@ -138,6 +138,24 @@
           animation: 0.6s ease-out 0.8s 1 forwards slidein;
         }
 
+        #loading .links {
+          margin-top: 18px;
+          opacity: 0;
+          animation: 0.6s ease-out 0.9s 1 forwards slidein;
+        }
+
+        #loading .links a {
+          color: #888;
+          text-decoration: none;
+          font-size: 13px;
+          margin: 0 10px;
+          transition: color 0.2s;
+        }
+
+        #loading .links a:hover {
+          color: #1a1a2e;
+        }
+
         #loading .progress-bar {
           width: 120px;
           height: 2px;
@@ -192,6 +210,10 @@
       <p class="subtitle">Software Engineer at Leena AI building AI agent infrastructure for Fortune 500 enterprises.</p>
       <p class="secondary">Previously co-founded Digisigns. Open source contributor to Apache Iceberg.</p>
       <p class="tech">Python · FastAPI · TypeScript · Node.js · ElasticSearch · AWS</p>
+      <div class="links">
+        <a href="https://linkedin.com/in/aashish03" rel="me">LinkedIn</a>
+        <a href="https://github.com/aashish-g03" rel="me">GitHub</a>
+      </div>
       <div class="progress-bar"><div class="progress-fill"></div></div>
     </div>
     <script>
