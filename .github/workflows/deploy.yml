@@ -19,7 +19,7 @@ jobs:
           channel: 'stable'
 
       - run: flutter pub get
-      - run: flutter build web --release --base-href "/"
+      - run: flutter build web --release
 
       - name: Deploy to deployment branch
         uses: peaceiris/actions-gh-pages@v4
