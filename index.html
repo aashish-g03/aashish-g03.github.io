@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+    <base href="/" />
+
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="description"
+      content="Aashish Gupta - Software Engineer at Leena AI. Building AI agent infrastructure, backend systems, and developer tools for Fortune 500 enterprises."
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TEC5KTT70E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TEC5KTT70E", { send_page_view: false });
+      // Send initial page view
+      gtag("event", "page_view", { page_path: window.location.pathname + window.location.hash });
+      // Track Flutter hash route changes
+      window.addEventListener("hashchange", function () {
+        gtag("event", "page_view", {
+          page_path: window.location.hash.replace("#", "") || "/",
+          page_title: document.title
+        });
+      });
+    </script>
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Aashish Gupta Portfolio" />
+    <link rel="apple-touch-icon" href="icons/logo-aerium-2.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icons/logo-aerium-2.png" />
+    <link rel="shortcut icon" type="image/png" href="icons/logo-aerium-2.png" />
+
+    <title>Aashish Gupta - Software Engineer | AI Agent Infrastructure</title>
+    <meta name="keywords" content="Aashish Gupta, Software Engineer, Leena AI, Python, FastAPI, Node.js, TypeScript, MCP, AI Agents, Backend Engineer, Delhi, DTU" />
+    <meta property="og:title" content="Aashish Gupta - Software Engineer" />
+    <meta property="og:description" content="Software Engineer at Leena AI building AI agent infrastructure for Fortune 500 enterprises. Python, FastAPI, Node.js, TypeScript." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.aashishgupta.tech" />
+    <link rel="canonical" href="https://www.aashishgupta.tech" />
+    <link rel="manifest" href="manifest.json" />
+
+    <script>
+      // The value below is injected by flutter build, do not touch.
+      const serviceWorkerVersion = "2595466789";
+    </script>
+    <!-- This script adds the flutter initialization JS code -->
+    <script src="flutter.js" defer></script>
+  </head>
+
+  <body>
+    <div id="loading">
+      <style>
+        body {
+          inset: 0;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+          position: fixed;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          background: #fff;
+          color: #1a1a2e;
+        }
+
+        #loading {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          padding: 0 24px;
+          box-sizing: border-box;
+        }
+
+        #loading img {
+          width: 96px;
+          height: 96px;
+          animation: 1.2s ease-in-out 0s infinite alternate breathe;
+          opacity: 0;
+          animation-delay: 0s;
+          animation-fill-mode: forwards;
+          margin-bottom: 24px;
+        }
+
+        #loading h1 {
+          font-size: 26px;
+          font-weight: 600;
+          margin: 0 0 10px 0;
+          letter-spacing: -0.5px;
+          opacity: 0;
+          animation: 0.6s ease-out 0.2s 1 forwards slidein;
+        }
+
+        #loading .subtitle {
+          font-size: 15px;
+          color: #555;
+          margin: 0 0 6px 0;
+          max-width: 480px;
+          line-height: 1.5;
+          opacity: 0;
+          animation: 0.6s ease-out 0.4s 1 forwards slidein;
+        }
+
+        #loading .secondary {
+          font-size: 14px;
+          color: #777;
+          margin: 0;
+          max-width: 480px;
+          line-height: 1.5;
+          opacity: 0;
+          animation: 0.6s ease-out 0.6s 1 forwards slidein;
+        }
+
+        #loading .tech {
+          font-size: 12px;
+          color: #999;
+          margin-top: 20px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          opacity: 0;
+          animation: 0.6s ease-out 0.8s 1 forwards slidein;
+        }
+
+        #loading .links {
+          margin-top: 18px;
+          opacity: 0;
+          animation: 0.6s ease-out 0.9s 1 forwards slidein;
+        }
+
+        #loading .links a {
+          color: #888;
+          text-decoration: none;
+          font-size: 13px;
+          margin: 0 10px;
+          transition: color 0.2s;
+        }
+
+        #loading .links a:hover {
+          color: #1a1a2e;
+        }
+
+        #loading .progress-bar {
+          width: 120px;
+          height: 2px;
+          background: #eee;
+          border-radius: 2px;
+          margin-top: 28px;
+          overflow: hidden;
+          opacity: 0;
+          animation: 0.4s ease-out 1s 1 forwards slidein;
+        }
+
+        #loading .progress-fill {
+          width: 0%;
+          height: 100%;
+          background: #1a1a2e;
+          border-radius: 2px;
+          animation: 3s ease-in-out 1s 1 forwards progress;
+        }
+
+        #loading.main_done .progress-fill {
+          animation-duration: 0.3s;
+          width: 100%;
+        }
+
+        #loading.init_done {
+          animation: 0.4s ease-in-out 0s 1 forwards fadeout;
+        }
+
+        @keyframes breathe {
+          from { transform: scale(1); opacity: 0.5; }
+          to { transform: scale(0.92); opacity: 0.8; }
+        }
+
+        @keyframes slidein {
+          from { opacity: 0; transform: translateY(12px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes progress {
+          0% { width: 0%; }
+          50% { width: 60%; }
+          100% { width: 85%; }
+        }
+
+        @keyframes fadeout {
+          from { opacity: 1; }
+          to { opacity: 0; }
+        }
+      </style>
+      <img src="icons/Icon-512.png" alt="Aashish Gupta" />
+      <h1>Aashish Gupta</h1>
+      <p class="subtitle">Software Engineer at Leena AI building AI agent infrastructure for Fortune 500 enterprises.</p>
+      <p class="secondary">Previously co-founded Digisigns. Open source contributor to Apache Iceberg.</p>
+      <p class="tech">Python · FastAPI · TypeScript · Node.js · ElasticSearch · AWS</p>
+      <div class="links">
+        <a href="https://linkedin.com/in/aashish03" rel="me">LinkedIn</a>
+        <a href="https://github.com/aashish-g03" rel="me">GitHub</a>
+      </div>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        var loading = document.querySelector("#loading");
+        _flutter.loader
+          .loadEntrypoint({
+            serviceWorker: {
+              serviceWorkerVersion: serviceWorkerVersion,
+            },
+          })
+          .then(function (engineInitializer) {
+            loading.classList.add("main_done");
+            return engineInitializer.initializeEngine();
+          })
+          .then(function (appRunner) {
+            loading.classList.add("init_done");
+            return appRunner.runApp();
+          })
+          .then(function (app) {
+            // Wait a few milliseconds so users can see the "zoooom" animation
+            // before getting rid of the "loading" div.
+            window.setTimeout(function () {
+              loading.remove();
+            }, 200);
+          });
+      });
+    </script>
+    <!-- <script>
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script> -->
+  </body>
+</html>
