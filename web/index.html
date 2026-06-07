@@ -46,7 +46,13 @@
     <link rel="icon" type="image/png" href="icons/logo-aerium-2.png" />
     <link rel="shortcut icon" type="image/png" href="icons/logo-aerium-2.png" />
 
-    <title>Aashish Gupta Portfolio</title>
+    <title>Aashish Gupta - Software Engineer | AI Agent Infrastructure</title>
+    <meta name="keywords" content="Aashish Gupta, Software Engineer, Leena AI, Python, FastAPI, Node.js, TypeScript, MCP, AI Agents, Backend Engineer, Delhi, DTU" />
+    <meta property="og:title" content="Aashish Gupta - Software Engineer" />
+    <meta property="og:description" content="Software Engineer at Leena AI building AI agent infrastructure for Fortune 500 enterprises. Python, FastAPI, Node.js, TypeScript." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.aashishgupta.tech" />
+    <link rel="canonical" href="https://www.aashishgupta.tech" />
     <link rel="manifest" href="manifest.json" />
 
     <script>
@@ -66,52 +72,75 @@
           margin: 0;
           padding: 0;
           position: fixed;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          background: #fff;
+          color: #1a1a2e;
         }
 
         #loading {
-          align-items: center;
           display: flex;
-          height: 100%;
+          flex-direction: column;
+          align-items: center;
           justify-content: center;
+          height: 100%;
           width: 100%;
+          text-align: center;
+          padding: 0 24px;
+          box-sizing: border-box;
         }
 
         #loading img {
+          width: 80px;
+          height: 80px;
           animation: 1s ease-in-out 0s infinite alternate breathe;
           opacity: 0.66;
           transition: opacity 0.4s;
+          margin-bottom: 32px;
         }
 
-        #loading.main_done img {
-          opacity: 1;
+        #loading h1 {
+          font-size: 28px;
+          font-weight: 600;
+          margin: 0 0 8px 0;
+          letter-spacing: -0.5px;
         }
 
-        #loading.init_done img {
-          animation: 0.33s ease-in-out 0s 1 forwards zooooom;
-          opacity: 0.05;
+        #loading p {
+          font-size: 16px;
+          color: #555;
+          margin: 0 0 6px 0;
+          max-width: 500px;
+          line-height: 1.5;
+        }
+
+        #loading .tech {
+          font-size: 13px;
+          color: #888;
+          margin-top: 16px;
+          letter-spacing: 0.5px;
+        }
+
+        #loading.main_done img { opacity: 1; }
+
+        #loading.init_done {
+          animation: 0.33s ease-in-out 0s 1 forwards fadeout;
         }
 
         @keyframes breathe {
-          from {
-            transform: scale(1);
-          }
-
-          to {
-            transform: scale(0.95);
-          }
+          from { transform: scale(1); }
+          to { transform: scale(0.95); }
         }
 
-        @keyframes zooooom {
-          from {
-            transform: scale(1);
-          }
-
-          to {
-            transform: scale(10);
-          }
+        @keyframes fadeout {
+          from { opacity: 1; }
+          to { opacity: 0; }
         }
       </style>
-      <img src="icons/Icon-512.png" alt="Loading indicator..." />
+      <img src="icons/Icon-512.png" alt="Aashish Gupta" />
+      <h1>Aashish Gupta</h1>
+      <p>Software Engineer at Leena AI building AI agent infrastructure for Fortune 500 enterprises.</p>
+      <p>Previously co-founded Digisigns. Open source contributor to Apache Iceberg.</p>
+      <p class="tech">Python · FastAPI · TypeScript · Node.js · ElasticSearch · AWS</p>
     </div>
     <script>
       window.addEventListener("load", function () {
