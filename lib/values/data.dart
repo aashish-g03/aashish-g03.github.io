@@ -115,53 +115,37 @@ class Data {
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
     ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
-    SocialData(
-      name: StringConst.INSTAGRAM,
-      iconData: FontAwesomeIcons.instagram,
-      url: StringConst.INSTAGRAM_URL,
-    ),
-    SocialData(
-      name: StringConst.TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: StringConst.TELEGRAM_URL,
-    ),
   ];
 
   static List<String> mobileTechnologies = [
-    "Flutter",
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "Java",
+    "C++",
     "Dart",
-    "Swift",
-    "Kotlin",
-    "Firebase",
-    "Xcode",
-    "Android Studio",
-    "Codemagic CI/CD"
+    "SQL",
   ];
   static List<String> backendTechnologies = [
-    "Javascript",
-    "Typescript",
-    "Node.js",
-    "Express.js",
     "FastAPI",
+    "Node.js",
+    "NestJS",
+    "Express.js",
+    "PySpark",
     "MongoDB",
-    "Docker",
-    "Redis"
+    "PostgreSQL",
+    "ElasticSearch",
   ];
 
   static List<String> otherTechnologies = [
-    "HTML 5",
-    "CSS 3",
-    "Java",
-    "Python",
-    "C / C++",
-    "SQLite",
-    "PostgreSQL",
-    "Git"
+    "Redis",
+    "RabbitMQ",
+    "Docker",
+    "AWS Lambda",
+    "GitHub Actions",
+    "Apache Iceberg",
+    "Apache Spark",
+    "Git",
   ];
   static List<SocialData> socialData1 = [
     SocialData(
@@ -174,33 +158,18 @@ class Data {
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
     ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
   ];
 
   static List<SocialData> socialData2 = [
     SocialData(
+      name: StringConst.GITHUB,
+      iconData: FontAwesomeIcons.github,
+      url: StringConst.GITHUB_URL,
+    ),
+    SocialData(
       name: StringConst.LINKED_IN,
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
-    ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
-    SocialData(
-      name: StringConst.INSTAGRAM,
-      iconData: FontAwesomeIcons.instagram,
-      url: StringConst.INSTAGRAM_URL,
-    ),
-    SocialData(
-      name: StringConst.TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: StringConst.TELEGRAM_URL,
     ),
   ];
 

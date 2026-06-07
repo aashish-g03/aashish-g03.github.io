@@ -263,14 +263,14 @@ class StringConst {
   static const String DURATION_5 = "Aug 2023 - Jan 2024";
 
   static const String COMPANY_6 = "Leena AI";
-  static const String COMPANY_6_URL = SITE_URL;
+  static const String COMPANY_6_URL = "https://www.leena.ai/";
   static const String POSITION_6 = "Software Development Intern";
   static const String COMPANY_6_ROLE_1 =
-      "Developing backend solutions (Node.js, TypeScript) for Leena AI's (YC-backed) AI chatbot Integrations Team, enhancing functionality for major clients.";
+      "Engineered backend services (Node.js, MongoDB, RabbitMQ) for the Flexi Benefits platform, handling enrollment, claims, and policy workflows. Reduced manual ops by 40%.";
   static const String COMPANY_6_ROLE_2 =
-      "Optimized chatbot integration processes for diverse client needs, improving user experience and reducing response times by 20% for SF profile users.";
+      "Built secure REST APIs for enterprise clients (Sony, Coca-Cola, HDFC) using Node.js and TypeScript, ensuring reliable third-party data synchronization.";
   static const String COMPANY_6_ROLE_3 =
-      "Collaborating within a dynamic tech stack (Node.js, TypeScript, MongoDB, Redis, etc.) to deliver scalable backend solutions for a rapidly growing AI platform.";
+      "Offloaded scheduled jobs to RabbitMQ workers with Redis caching, cutting service memory by ~25%. Migrated modular jobs to AWS Lambda, reducing infra cost by ~15%.";
   static const String LOCATION_6 = "Gurgaon - India";
   static const String DURATION_6 = "Jan 2024 - June 2024";
 
