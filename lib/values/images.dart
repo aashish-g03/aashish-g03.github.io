@@ -10,7 +10,7 @@ class ImagePath {
   static const String DEV = "$imageDir/aashish_gupta.png";
 
   static const String VYBZ = "$imageDir/vybz.jpg";
-  static const String DAVID = "$imageDir/dev_profile.png";
+  static const String DEV_PROFILE = "$imageDir/dev_profile.png";
   static const String COLOSSAL_TOONS = "$imageDir/colossal_toons.jpg";
   static const String LOGIN_CATALOG = "$imageDir/login_catalog.jpg";
   static const String ONBOARDING_APP = "$imageDir/onboarding_app.jpg";

@@ -23,7 +23,7 @@ class StringConst {
   static const String HI = "Hi,";
   static const String DEV_INTRO = "I'm Aashish.";
   static const String DEV_TITLE = "Software Engineer.";
-  static const String DEV_DESC = "Mobile Engineer / Backend Developer";
+  static const String DEV_DESC = "Backend & AI Agent Infrastructure";
   static const String SEE_MY_WORKS = "See my works";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String CRAFTED_WITH_LOVE = "Crafted with love.";
@@ -58,25 +58,25 @@ class StringConst {
 
   // About Page
   static const String ABOUT_DEV_CATCH_LINE =
-      "I am a passionate front-end developer and ui/ux designer with a keen eye for details.";
-  static const String ABOUT_DEV_CATCH_LINE_1 = "I specialize in building high ";
+      "I build the agent infrastructure that Fortune 500 companies run their AI on.";
+  static const String ABOUT_DEV_CATCH_LINE_1 = "I specialize in building ";
   static const String ABOUT_DEV_CATCH_LINE_2 =
-      "quality mobile & web applications.";
+      "backend systems & AI agent infrastructure.";
   // static const String ABOUT_DEV_CATCH_LINE_3 = "& web applications";
-  static const String ABOUT_DEV_CATCH_LINE_4 = "I also have a strong";
-  static const String ABOUT_DEV_CATCH_LINE_5 = "passion for opensource work.";
+  static const String ABOUT_DEV_CATCH_LINE_4 = "I also contribute to";
+  static const String ABOUT_DEV_CATCH_LINE_5 = "open source (Apache Iceberg).";
   static const String ABOUT_DEV_STORY = "Story";
   static const String ABOUT_DEV_STORY_TITLE = "A little bit about myself.";
   static const String ABOUT_DEV_STORY_CONTENT_1 =
-      "I am a dedicated software developer with a focus on Flutter and Backend development. A recent graduate in Computer Engineering from Delhi Technological University (formerly DCE), I've led teams in building innovative applications, contributing to user engagement and app traffic growth. With a specialization in mobile and backend techmologies, I've successfully developed robust and scalable systems. Outside of coding, I'm an achiever in academics, a coding challenge enthusiast, and a passionate advocate for continuous learning.";
+      "I'm a software engineer at Leena AI building AI agent infrastructure for Fortune 500 enterprises. My work includes autonomous agent servers with streaming delivery, debugging tools with RBAC and PII filtering, LLM evaluation frameworks, and AI-powered matching systems using ElasticSearch with HNSW vector search (85% accuracy for a Big 4 client).";
   static const String ABOUT_DEV_STORY_CONTENT_2 =
-      "I bring a wealth of experience in software development, having interned at renowned companies like Leena AI and Prodo Technologies. My journey includes designing and developing feature-rich applications, optimizing UI/UX, and collaborating under the mentorship of industry leaders.";
+      "Before Leena AI, I co-founded Digisigns, a cross-platform digital signage platform where I built the full product from zero: FastAPI backend, WebSocket media sync, Android TV and Tizen clients. That's where I learned that building things end-to-end is the only way I want to work.";
   static const String ABOUT_DEV_STORY_CONTENT_3 =
-      "In addition to my technical prowess, I've demonstrated leadership by leading a team in constructing a networking platform for over 1000 members at Delhi Technological University's IOSD. This experience has sharpened my collaboration and teamwork skills, making me a valuable asset in a fast-paced and innovative environment.";
+      "On the side, I contribute to Apache Iceberg's Python SDK and built crewmate, an open-source multi-agent orchestration CLI. I also built a batch ETL pipeline with PySpark and Apache Iceberg featuring SCD Type 2 temporal modeling and source-to-sink reconciliation.";
   static const String ABOUT_DEV_TECHNOLOGY = "Technology";
-  static const String MOBILE_TECH = "Mobile Technologies";
-  static const String BACK_END_TECH = "Backend Technologies";
-  static const String OTHER_TECH = "Other Technologies";
+  static const String MOBILE_TECH = "Languages";
+  static const String BACK_END_TECH = "Backend & Data";
+  static const String OTHER_TECH = "Cloud & Tools";
   static const String ABOUT_DEV_TECHNOLOGY_TITLE = "What I use.";
   static const String ABOUT_DEV_TECHNOLOGY_CONTENT =
       "I use a number of tools to aid my creative process when bringing things to life. Listed below are the tools and technologies that I have used over the years.";
@@ -126,8 +126,8 @@ class StringConst {
 
   static const String INTRO = "Hi, my name is";
   static const String DEV_NAME = "Aashish Gupta";
-  static const String PUNCH_LINE = "I build things with flutter";
-  static const String SPECIALITY = "FLUTTER DEV";
+  static const String PUNCH_LINE = "I build AI agent infrastructure";
+  static const String SPECIALITY = "SOFTWARE ENGINEER";
   static const String DESIGNED_IN = "Made in India with ";
   static const String BUILT_BY = "Built by Aashish Gupta ";
 
@@ -138,19 +138,19 @@ class StringConst {
   static const String MESSAGE_HINT_TEXT = "Message";
 
   //Skills
-  static const String FLUTTER = "Flutter";
-  static const String JETPACK_COMPOSE = "Jetpack Compose";
+  static const String FLUTTER = "Python";
+  static const String JETPACK_COMPOSE = "TypeScript";
   static const String JAVA = "Java";
-  static const String ANDROID = "Android";
-  static const String PYTHON = "Python";
-  static const String KOTLIN = "Kotlin";
-  static const String JAVASCRIPT = "Javascript";
-  static const String PHP = "PHP";
-  static const String LARAVEL = "Laravel";
+  static const String ANDROID = "FastAPI";
+  static const String PYTHON = "Node.js";
+  static const String KOTLIN = "PySpark";
+  static const String JAVASCRIPT = "JavaScript";
+  static const String PHP = "ElasticSearch";
+  static const String LARAVEL = "MongoDB";
   static const String SQL = "SQL";
-  static const String WORDPRESS = "Wordpress";
-  static const String BOOTSTRAP = "Bootstrap";
-  static const String HTML_CSS = "HTML/CSS";
+  static const String WORDPRESS = "Redis";
+  static const String BOOTSTRAP = "Docker";
+  static const String HTML_CSS = "AWS";
 
   //routes
   static const String LOADING_PAGE = "/";
@@ -170,10 +170,9 @@ class StringConst {
 
   static const String GITHUB_URL = "https://github.com/aashish-g03";
   static const String LINKED_IN_URL = "https://www.linkedin.com/in/aashish03/";
-  static const String TWITTER_URL = "https://twitter.com/Aashishg003";
-  static const String INSTAGRAM_URL =
-      "https://www.instagram.com/aashish_gupta_01";
-  static const String TELEGRAM_URL = "https://t.me/";
+  static const String TWITTER_URL = "";
+  static const String INSTAGRAM_URL = "";
+  static const String TELEGRAM_URL = "";
 
   //Contacts
   static const String CONNECT = "Connect with me";
@@ -277,13 +276,13 @@ class StringConst {
 
   static const String COMPANY_7 = "Leena AI";
   static const String COMPANY_7_URL = "https://www.leena.ai/";
-  static const String POSITION_7 = "Software Development Engineer - Backend";
+  static const String POSITION_7 = "Software Development Engineer I";
   static const String COMPANY_7_ROLE_1 =
-      "Enhanced backend systems using Node.js, MongoDB, RabbitMQ, and Redis, improving scalability by 40%.";
+      "Built autonomous agent server using FastAPI with streaming response delivery, integrated with Microsoft 365 Copilot and SAP Joule via MCP and A2A protocols.";
   static const String COMPANY_7_ROLE_2 =
-      "Designed integration pipelines for Fortune 500 clients (Sony, Coca-Cola, PhonePe).";
+      "Designed internal debugging agent with MCP-based tool exposure, RBAC and PII filtering. Built LLM evaluation framework with LLM-as-judge scoring and flake detection.";
   static const String COMPANY_7_ROLE_3 =
-      "Implemented a job queuing system using RabbitMQ, reducing processing time by 25%.";
+      "Led AI-powered matching system for a Big 4 client using ElasticSearch HNSW vector search, achieving 85% accuracy and cutting manual screening by 50%.";
   static const String LOCATION_7 = "Gurgaon - India";
   static const String DURATION_7 = "July 2024 - Present";
 
